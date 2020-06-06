@@ -32,7 +32,7 @@ io.on('connection', socket => {
   })
 })
 
-let port_number = server.listen(process.env.PORT || 3001);
+let port_number = process.env.PORT || 3001;
 
 server.listen(port_number, () => {
   console.log(`Listening on port ${port_number}`);
