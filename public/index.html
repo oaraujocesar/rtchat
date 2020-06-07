@@ -19,7 +19,7 @@
   </form>
 
   <script type="text/javascript">
-    const socket = io('http://localhost:3001');
+    const socket = io('https://rtchat-io.herokuapp.com/');
 
     function renderMessage(message) {
       $('.messages').append(`<div class="message"><strong>${ message.author }</strong>: ${ message.message }</div>`)
